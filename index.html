@@ -129,7 +129,7 @@
     menu.remove();
   };
 
-  button.innerHTML = 'Launch ByeBlocker';
+  button.innerHTML = 'Launch Proxy';
   button.style.cssText = `
     font-family: Arial;
     font-size: 16px;
@@ -142,7 +142,7 @@
     cursor: pointer;
   `;
   button.onclick = function() {
-    var link = prompt("Url?");
+    var link = prompt("Enter URL Here");
     var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
     fetch(proxy + link)
       .then((response) => response.text())
